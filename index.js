@@ -1,7 +1,7 @@
 'use-strict'
 
-const countryCodes = ['US', 'XS']
-const cusip = require('@thomaschaplin/cusip-generator').generateCusip
+const countryCodes = require('./country-codes.json')
+const cusip = require('@thomaschaplin/cusip-generator').generateCusip()
 
 
 const generateIsin = cusip => {
