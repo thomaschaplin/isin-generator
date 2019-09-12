@@ -5,7 +5,9 @@
 [![GitHub stars](https://img.shields.io/github/stars/thomaschaplin/isin-generator)](https://github.com/thomaschaplin/isin-generator/stargazers)
 [![GitHub license](https://img.shields.io/github/license/thomaschaplin/isin-generator)](https://github.com/thomaschaplin/isin-generator/blob/master/LICENSE)
 
-Generate a random name from a list of over 277,000 names
+Generate a random ISIN
+
+An International Securities Identification Number (ISIN) is a code that uniquely identifies a specific securities issue. The organization that allocates ISINs in any particular country is the country's respective National Numbering Agency (NNA).
 
 ## Install
 
