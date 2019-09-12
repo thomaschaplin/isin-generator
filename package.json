@@ -1,0 +1,25 @@
+{
+  "name": "isin-generator",
+  "version": "1.0.0",
+  "description": "Generate a valid ISIN",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thomaschaplin/isin-generator.git"
+  },
+  "keywords": [
+    "isin",
+    "generator",
+    "isin-generator",
+    "thomaschaplin"
+  ],
+  "author": "Thomas Chaplin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thomaschaplin/isin-generator/issues"
+  },
+  "homepage": "https://github.com/thomaschaplin/isin-generator#readme"
+}
