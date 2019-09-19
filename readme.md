@@ -18,21 +18,21 @@ An International Securities Identification Number (ISIN) is a code that uniquely
 ### ES5
 ```js
 const generateIsin = require('@thomaschaplin/isin-generator')
-console.log(generateIsin.generateIsin()) // US112091HZ96
+console.log(generateIsin.isinGenerator()) // US112091HZ96
 ```
 
 or
 
 ```js
-const { generateIsin } = require('@thomaschaplin/isin-generator')
-console.log(generateIsin()) // XS2841269504
+const { isinGenerator } = require('@thomaschaplin/isin-generator')
+console.log(isinGenerator()) // XS2841269504
 ```
 
 ### ES6
 
 ```js
-import { generateIsin } from '@thomaschaplin/isin-generator')
-console.log(generateIsin()) // US362159GW90
+import { isinGenerator } from '@thomaschaplin/isin-generator')
+console.log(isinGenerator()) // US362159GW90
 ```
 
 ## License 
