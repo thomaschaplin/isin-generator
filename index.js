@@ -59,5 +59,3 @@ const generateIsinCheckDigit = isin => {
 exports.isinGenerator = function isinGenerator() {
     return generateIsin(cusip)
 }
-
-// console.log(generateIsin())
