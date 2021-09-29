@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/thomaschaplin/isin-generator#readme",
   "dependencies": {
-    "@thomaschaplin/cusip-generator": "^1.0.6"
+    "@thomaschaplin/cusip-generator": "^1.0.8"
   }
 }
