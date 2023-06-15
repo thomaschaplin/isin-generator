@@ -1,6 +1,6 @@
 {
   "name": "@thomaschaplin/isin-generator",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Generate a valid ISIN",
   "main": "index.js",
   "scripts": {
@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/thomaschaplin/isin-generator#readme",
   "dependencies": {
-    "@thomaschaplin/cusip-generator": "^1.0.1"
+    "@thomaschaplin/cusip-generator": "^1.0.11"
   }
 }
