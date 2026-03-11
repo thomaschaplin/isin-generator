@@ -1,39 +1,62 @@
-# isin-generator
-![npm (scoped)](https://img.shields.io/npm/v/@thomaschaplin/isin-generator)
-[![GitHub issues](https://img.shields.io/github/issues/thomaschaplin/isin-generator)](https://github.com/thomaschaplin/isin-generator/issues)
-[![GitHub forks](https://img.shields.io/github/forks/thomaschaplin/isin-generator)](https://github.com/thomaschaplin/isin-generator/network)
-[![GitHub stars](https://img.shields.io/github/stars/thomaschaplin/isin-generator)](https://github.com/thomaschaplin/isin-generator/stargazers)
-[![GitHub license](https://img.shields.io/github/license/thomaschaplin/isin-generator)](https://github.com/thomaschaplin/isin-generator/blob/master/LICENSE)
+<img src="assets/logo.png" alt="logo" width="301" height="273" />
 
-Generate a random ISIN
+# isin-generator
+
+isin-generator is a [Node.js](https://nodejs.org/en/) library to generate
+random ISIN.
 
 An International Securities Identification Number (ISIN) is a code that uniquely identifies a specific securities issue. The organization that allocates ISINs in any particular country is the country's respective National Numbering Agency (NNA).
 
-## Install
+## Usage
 
 `npm i @thomaschaplin/isin-generator`
 
-## Usage
+### Example Usage
 
-### ES5
+#### ES5
+
 ```js
-const generateIsin = require('@thomaschaplin/isin-generator')
-console.log(generateIsin.isinGenerator()) // US112091HZ96
+const generateIsin = require("@thomaschaplin/isin-generator");
+console.log(generateIsin.generateIsin()); // US112091HZ96
 ```
 
 or
 
 ```js
-const { isinGenerator } = require('@thomaschaplin/isin-generator')
-console.log(isinGenerator()) // XS2841269504
+const { generateIsin } = require("@thomaschaplin/isin-generator");
+console.log(generateIsin()); // XS2841269504
 ```
 
-### ES6
+#### ES6
 
 ```js
-import { isinGenerator } from '@thomaschaplin/isin-generator')
-console.log(isinGenerator()) // US362159GW90
+import { generateIsin } from '@thomaschaplin/isin-generator')
+console.log(generateIsin()) // US362159GW90
 ```
 
-## License 
+## Setup
+
+Make sure you have [Node.js](https://nodejs.org/en/) installed on your machine
+
+### Development
+
+#### Installation
+
+- Clone this repository
+  `git clone git@github.com:thomaschaplin/isin-generator.git`
+- Change directory `cd isin-generator`
+- Install the dependencies `npm install`
+- Transpile the code `npm run build` or `npm run watch`
+
+#### Tests
+
+- Run the tests `npm test`
+- Run the tests with coverage `npm run test:coverage`
+
+## License
+
 [MIT](./LICENSE)
+
+---
+
+[Logo](https://www.clipartkey.com/view/wbiiho_stamp-on-document-clipart/) graphic by <a href="https://www.clipartkey.com/upic/4653/">Skyler B</a> from ClipArtKey.
