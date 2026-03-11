@@ -2,27 +2,51 @@
   "name": "@thomaschaplin/isin-generator",
   "version": "1.0.3",
   "description": "Generate a valid ISIN",
-  "main": "index.js",
+  "main": "build/index.js",
+  "files": [
+      "build",
+      "LICENSE",
+      "readme.md",
+      "assets/logo.png"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+      "test": "jest --runInBand",
+      "test:coverage": "rm -rf coverage && npm test -- --coverage",
+      "test:mutation": "stryker run",
+      "build": "rm -rf ./build && tsc",
+      "watch": "npm run build -- --watch",
+      "pre-push": "./prepush.sh",
+      "prepare": "husky install"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/thomaschaplin/isin-generator.git"
+      "type": "git",
+      "url": "https://github.com/thomaschaplin/isin-generator"
   },
-  "keywords": [
-    "isin",
-    "generator",
-    "isin-generator",
-    "thomaschaplin"
-  ],
-  "author": "Thomas Chaplin",
-  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/thomaschaplin/isin-generator/issues"
+      "url": "https://github.com/thomaschaplin/isin-generator/issues"
   },
   "homepage": "https://github.com/thomaschaplin/isin-generator#readme",
+  "keywords": [
+      "isin",
+      "generator",
+      "isin-generator",
+      "thomaschaplin"
+  ],
+  "author": "Thomas Chaplin <thomaschaplin@outlook.com>",
+  "license": "MIT",
   "dependencies": {
     "@thomaschaplin/cusip-generator": "^1.0.1"
+  },
+  "devDependencies": {
+      "jest": "^29.5.0",
+      "kelonio": "^0.9.0",
+      "ts-jest": "^29.1.0",
+      "@types/jest": "^29.5.2",
+      "@types/node": "^20.3.1",
+      "typescript": "^5.1.3",
+      "@stryker-mutator/core": "^7.0.2",
+      "@stryker-mutator/jest-runner": "^7.0.2",
+      "@stryker-mutator/typescript-checker": "^7.0.2",
+      "husky": "^8.0.3"
   }
 }
